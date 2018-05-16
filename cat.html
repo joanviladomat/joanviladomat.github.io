@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Parkinghood</title>
+   <meta name="description" content="Parkinghood is a peer-to-peer marketplace to rent and share private parking spaces on a short-term basis. Welcome to the collaborative parking!">
+  <meta name="keywords" content="parking, llogar parking,cercar parking, llogar garatge, aparcar">
+  <link rel="icon" href="http://parkinghood.com/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="http://parkinghood.com/favicon.ico" type="image/x-icon"/>
+  <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+  <meta property="og:site_name" content="Parkinghood">
+  <link rel="stylesheet" href="http://parkinghood.com/style2.css">
+  <link rel="stylesheet" href="http://parkinghood.com/coming_soon.css">
+  <link rel="stylesheet" href="http://parkinghood.com/languageswitcher.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <script src="http://parkinghood.com/languageswitcher.js"></script>
+  <script src="http://parkinghood.com/cookies.js" type="text/javascript"></script>
+  <script>
+ var menuOffset = $('#navbar')[0].offsetTop;
+
+$(document).bind('ready scroll', function() {
+    var docScroll = $(document).scrollTop();
+
+    if (docScroll >= menuOffset) {
+        $('#navbar').addClass('fixed');
+    } else {
+        $('#navbar').removeClass('fixed');            
+    }
+
+});
+  </script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=272606142763490";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar">
+    <div class="content">
+        <ul class="page menu">
+            <li><a href="http://parkinghood.com/#about" target="_top" style="color: #ffffff;" class="animate-scroll">Què és?</a></li>
+			<li><a href="http://parkinghood.com/#features" target="_top" style="color: #ffffff;" class="animate-scroll">Avantatges</a></li>
+            <li><a href="http://parkinghood.com/#team" target="_top" style="color: #ffffff;" class="animate-scroll">Equip</a></li>
+            <li><a href="http://parkinghood.com/#contact" target="_top" style="color: #ffffff;" class="animate-scroll">Contactar</a></li>
+        </ul>
+       <ul class="social menu">
+			<li>
+				<a class="facebook" href="https://www.facebook.com/parkinghood" target="_blank"></a>
+			</li>
+			<li>
+				<a class="twitter" href="https://www.twitter.com/parkinghood" target="_blank"></a>
+			</li>
+			<li>
+				<a class="google-plus" href="https://plus.google.com/100355110640423935347/" target="_blank"></a>
+			</li>
+			<li>
+				<a class="blogger" href="https://blog.parkinghood.com" target="_blank"></a>
+			</li>
+			<li>
+				<a class="instagram" href="https://instagram.com/parkinghood/" target="_blank"></a>
+			</li>
+		</ul>
+<div id="country-select">
+  <form action="http://parkinghood.com/cat/server-side-script.php">
+    <select id="country-options" name="country-options">
+      <option title="../en" value="uk">English</option>
+      <option title="https://www.parkinghood.com" value="es">Español</option>
+	  <option selected="selected" title="../cat" value="ca">Català</option>
+    </select>
+    <input value="Select" type="submit" />
+  </form>
+</div>
+    </div>
+</div>
+<div class="photopanel">
+  <div style="position: relative;" class="slideshow">
+      <img style="position: absolute; top: 0px; z-index: 4; opacity: 0; display: none;" src="http://parkinghood.com/images/home1.jpg">
+      <img src="http://parkinghood.com/images/home_big1.jpg" style="position: absolute; top: 0px; z-index: 3; display: none; opacity: 0;" mysrc="../images/home_big1.jpg">
+      <img src="http://parkinghood.com/images/home3.jpg" style="position: absolute; top: 0px; z-index: 2; display: block; opacity: 0;" mysrc="../images/home3.jpg">
+      <img src="http://parkinghood.com/images/home_big2.jpg" style="position: absolute; top: 0px; z-index: 5; display: block; opacity: 0;" mysrc="../images/home_big2.jpg">
+      <img src="http://parkinghood.com/images/home_big4.jpg" style="position: absolute; top: 0px; z-index: 7; display: block; opacity: 0;" mysrc="../images/home_big4.jpg">
+      <img src="http://parkinghood.com/images/home_big5.jpg" style="position: absolute; top: 0px; z-index: 8; display: block; opacity: 0;" mysrc="../images/home_big5.jpg">
+      <img src="http://parkinghood.com/images/home_big6.jpg" style="position: absolute; top: 0px; z-index: 9; display: block; opacity: 0;" mysrc="../images/home_big6.jpg">
+  </div>
+  <div style="position: relative;" class="mobile_slideshow">
+      <img style="position: absolute; top: 0px; z-index: 6; opacity: 0; display: none;" src="http://parkinghood.com/images/home-m_1.jpg">
+      <img src="http://parkinghood.com/images/home_s1.jpg" style="position: absolute; top: 0px; z-index: 5; display: none; opacity: 0;" mysrc="../images/home_s1.jpg">
+      <img src="http://parkinghood.com/images/home-m_3.jpg" style="position: absolute; top: 0px; z-index: 4; display: block; opacity: 1;" mysrc="../images/home-m_3.jpg">
+      <img src="http://parkinghood.com/images/home-m_3.jpg" style="position: absolute; top: 0px; z-index: 4; display: block; opacity: 1;" mysrc="../images/home-m_3.jpg">
+      <img src="http://parkinghood.com/images/home-m_3.jpg" style="position: absolute; top: 0px; z-index: 4; display: block; opacity: 1;" mysrc="../images/home-m_3.jpg">
+      <img src="http://parkinghood.com/images/home-m_3.jpg" style="position: absolute; top: 0px; z-index: 4; display: block; opacity: 1;" mysrc="../images/home-m_3.jpg">
+  </div>
+  <div class="overlay">
+    <span class="main_logo">
+    </span>
+    <div class="box" id="box">
+    <img src="http://parkinghood.com/images/logo.png" />
+    <h2 style="color: #ffffff;">Lloga la teva plaça per dies i hores.</h2>
+      <form id="signup" action="http://parkinghood.com/cat/index.php" method="get">
+        <h4>Vols ser un dels nostres amfitrions?</h4>
+        <input name="email" id="email" class="large dark" placeholder="Deixa'ns el teu correu" type="text">
+        <button class="large green" id="SendButton" >Uneix-te</button>
+        <a class="not_sure">Tranquil. No t'enviarem Spam.</a>
+		<img style="text-align: center;margin-top: -18px;margin-left:-385px;" src="http://parkinghood.com/cat/arrow_cat.png">
+        <div id="message" class="message"></div>  
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="lightpanel">
+  <div class="content">
+
+    <a id="about"></a>
+    <div class="section about">
+      <h1>Què és?</h1>
+      <p class="intro">
+       Parkinghood és una plataforma de consum col·laboratiu que permet llogar i compartir places d’aparcament particulars de forma temporal. A Parkinghood tenim una doble missió:
+
+<br/>
+<br/>
+1. Aparcar no ha de ser ni tant car ni tant estressant<img src="http://parkinghood.com/fletxa.png" > els preus actuals no estan justificats ja que el problema no és la falta de llocs, sinó la seva infrautilització. Per aquest motiu, hem creat una alternativa low-cost basada en l'aparcament col·laboratiu.
+<br/>
+<br/>
+2. Redistribució entre els ciutadans<img src="http://parkinghood.com/fletxa.png" > l’aparcament urbà genera uns beneficis que només es reparteixen entre uns pocs. Per això ja estem augmentant l’oferta de places disponibles a les ciutats i generant uns ingressos addicionals pels nostres amfitrions.
+<br/>
+<br/></p>
+</div>
+	<a id="features"></a>
+    <div class="section about">
+      <h1>Avantatges</h1>
+	   <ul class="feature">
+		<li style="width:260px;">
+			<img src="http://parkinghood.com/feature1.png" >
+			<br/><span class="title-feature">Estalvia temps i diners</span>
+			<p>Sr. Conductor, no donis més voltes perquè aquí per fi tens el teu lloc. A través de Parkinghood pots reservar una plaça propera a la teva destinació i a un preu raonable. Uneix-t’hi tu també i comença a estalviar!</p>
+		</li>
+		<li style="width:260px;">
+			<img src="http://parkinghood.com/feature2.png" >
+			<br/><span class="title-feature">Comunitat de confiança</span>
+			<p>Gràcies a la col·laboració entre persones com tu, estem creant l'aparcament amb més places de la teva ciutat. Un espai on els pilars principals sempre seran la confiança i la seguretat</p>
+		<br/>
+		</li>
+		<li style="width:260px;">
+			<img src="http://parkinghood.com/feature3.png" >
+			<br/><span class="title-feature">Compartir té premi</span>
+			<p>Qui té una plaça d’aparcament, té un tresor. Si ets així d'afortunat, ara també pots ser amfitrió de Parkinghood i llogar-la quan no la necessitis. Afegeix la teva plaça i comença a obtenir ingressos addicionals!</p>
+		</li>
+	   </ul>
+	</div>
+	
+	<a id="hall"></a>
+      <h1>Amb el suport de</h1>
+      <ul class="feature">
+        <li class="award">
+			<a href="http://www.startupnext.co/" target="_blank"> <img src="http://parkinghood.com/startupnext.png" > </a>
+        </li>
+        <li class="award">
+			<a href="http://www.uab.cat/uabempren/" target="_blank"> <img src="http://parkinghood.com/images/uabempren.png" > </a>
+        </li>
+         <li class="award">
+			<a href="http://www.tecnocampus.cat/ca/presentacio-master-emprenedoria" target="_blank"> <img src="http://parkinghood.com/tecnocampus.png" > </a>
+        </li>
+		<li class="award">
+			<a href="https://www.youtube.com/watch?v=Spn5kxBlrE8" target="_blank"> <img src="http://parkinghood.com/images/startup.png" > </a>
+        </li>
+		<li class="award">
+			<a href="http://imagine.cc/" target="_blank"> <img src="http://parkinghood.com/imagine.png" > </a>
+        </li>
+		<li class="award">
+			<a href="http://blog.seedrocket.com/2015/06/parkinghood-se-instala-en-nuestra-aceleradora/" target="_blank"> <img src="http://parkinghood.com/images/seedrocket.png" > </a>
+        </li>
+      </ul>
+	
+	<a id="team"></a>
+      <h1>Equip</h1>
+      <ul class="team">
+        <li class="member">
+          <span class="photo"><img class="grayscale" src="http://parkinghood.com/joan_pic.png" ></span>
+          <span class="details">
+            <div class="name">Joan Viladomat</div>
+            <div class="position">Fundador / Desenvolupament de Negoci</div>
+            <div class="bio">Enginyer Ambiental amb un Màster en Emprenedoria i experiència en innovació dins del sector de l’aparcament. Apassionat del consum col·laboratiu, la sostenibilitat, els gossos i les sorpreses. Imagine Express Dreamer, organitzador de l’Entrepreneurs Break i jugador de bàsquet.</div>
+            <a style="margin-left:155px;" href="mailto:joan@parkinghood.com">joan@parkinghood.com</a>
+          </span>
+        </li>
+		<li class="member">
+          <div class="photo"><img class="grayscale" src="http://parkinghood.com/marc_pic.png" ></div>
+          <div class="details">
+            <div class="name">Marc Serra</div>
+            <div class="position">CoFundador / Desenvolupament de Tecnologia</div>
+            <div class="bio">Desenvolupador de Software especialitzat en backend i també amb experiència en frontend. La seva principal motivació és crear aplicacions que facin més fàcil la vida de les persones. Apassionat d’Internet i les noves tecnologies. Gamer, addicte a les sèries i fan del heavy metal.</div>
+            <a style="margin-left:155px;" href="mailto:marc@parkinghood.com">marc@parkinghood.com</a>
+		  </div>
+        </li>
+        <li class="member">
+          <div class="photo"><img class="grayscale" src="http://parkinghood.com/david_pic.png" ></div>
+          <div class="details">
+            <div class="name">David Reche</div>
+            <div class="position">CoFundador / Desenvolupament de Producte</div>
+            <div class="bio">Enginyer Informàtic creant projectes a Internet des del 1996. Un Spectrum va ser el seu primer ordinador i amb només 5 anys tot va començar. Apassionat del disseny, l’aviació i els projectes que tenen un impacte i canvien el món. Emprenedor, fan del món startup, creatiu i viatger.</div>
+            <a style="margin-left:155px;" href="mailto:david@parkinghood.com">david@parkinghood.com</a>
+		  </div>
+        </li>
+        <li class="member">
+          <div class="photo"><img src="http://parkinghood.com/pic_you.png" ></div>
+          <div class="details">
+            <div class="name">Tu</div>
+            <div class="position">Uneix-te a l'equip!</div>
+            <div class="bio">Et volem conèixer.</div>
+            <a href="mailto:talent@parkinghood.com">talent@parkinghood.com</a>
+          </div>
+        </li>
+      </ul>
+	  
+	  <a id="press"></a>
+      <h1>Parlen de nosaltres</h1>
+      <ul class="feature">
+        <li class="media">
+			<a href="http://blogs.20minutos.es/capeando-la-crisis/2014/07/02/el-bajo-coste-llega-tambien-a-los-aparcamientos/" target="_blank"> <img src="http://parkinghood.com/20minutos.png" > </a>
+        </li>
+        <li class="media">
+			<a href="http://hemeroteca.lavanguardia.com/preview/2014/06/15/pagina-91/94014843/pdf.html?search=economia%20colaborativa%20cala%20en%20el%20gran%20consumo" target="_blank"> <img src="http://parkinghood.com/lavanguardia.png" > </a>
+        </li>
+         <li class="media">
+			<a href="http://www.rtve.es/alacarta/videos/telediario/nuevas-tecnologias-crisis-disparan-alternativas-consumo-tradicional/2618520" target="_blank"> <img src="http://parkinghood.com/rtve.png" > </a>
+        </li>
+         <li class="media">
+			<a href="http://ounae.com/reservar-plazas-aparcamiento-online/" target="_blank"> <img src="http://parkinghood.com/onnae.png" > </a>
+        </li>
+		 <li class="media">
+			<a href="http://www.btv.cat/btvnoticies/2014/12/05/google-organitza-a-barcelona-unes-jornades-per-formar-emprenedors/ " target="_blank"> <img src="http://parkinghood.com/images/btv.png" > </a>
+        </li>
+		 <li class="media">
+			<a href="http://compartofuturo.com/upc-el-futuro-sera-colaborativo-o-no-sera/" target="_blank"> <img src="http://parkinghood.com/images/ouishare.png" > </a>
+        </li>
+		<li class="media">
+			<a href="http://hemerotek.com/2014/12/05/startups-google-launchpad-de-barcelona/" target="_blank"> <img src="http://parkinghood.com/images/hemerotek.png" > </a>
+        </li>
+      </ul>
+
+   <a id="contact"></a>
+	<h1>Contactar</h1>
+	<div class="rightform"> 
+		<form id="contact-form" action="http://parkinghood.com/cat/form.php" method="post">
+			<h3>Fes-nos un toc</h3>
+			<h4>Ens encantaria saber de tu així que no dubtis en fer-nos arribar els teus comentaris, suggerències o preguntes a través del següent formulari.</h4>
+			<div>
+				<label>
+					<span>Sóc : *</span>
+					<select id="type" name="type">
+   					 	<option value="owner">
+        					Amfitrió
+   					 	</option>
+   					 	<option value="driver">
+    				    	Conductor
+                    	</option>
+                    	<option value="other">
+                       		Altres
+                    	</option>
+                  </select>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Nom: *</span>
+					<input placeholder="Introdueix el teu nom" type="text" name="name" id="name" tabindex="1" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Email: *</span>
+					<input placeholder="Introdueix el teu correu" type="email" name="email" id="email" tabindex="2" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Missatge: *</span>
+					<textarea placeholder="Deixa'ns les teves paraules aquí" tabindex="5" name="message" id="message" required></textarea>
+				</label>
+			</div>
+			<div>
+				<button name="submit" type="submit" id="contact-submit">Enviar</button>
+			</div>
+		</form> 
+	</div>	
+	<div class="email">
+		O també pots arribar a nosaltres per email:
+		<ul style="padding: 10px;">
+			<li>
+				Cerquem talent:
+				<a href="mailto:talent@parkinghood.com">
+					talent@parkinghood.com
+				</a>
+			</li>
+			<li>
+				Consultes de premsa: 
+				<a href="mailto:press@parkinghood.com">
+					press@parkinghood.com
+				</a>
+			</li>
+			<li>
+				Simplement diga'ns "Hola!": 
+				<a href="mailto:hola@parkinghood.com">
+					hola@parkinghood.com
+				</a>
+			</li>
+		</ul>
+	</div> 
+  </div>
+</div>
+<div id="overbox3">
+    <div id="infobox3">
+        <p>Utilitzem cookies per tal de millorar la usabilitat de la nostra web amb l'objectiu de facilitar la navegació i oferir-te una millor experiència i servei. Si continues navegant considerem que acceptes el seu ús.
+        <a onclick="aceptar_cookies();" style="cursor:pointer;">  X Tancar</a></p>
+    </div>
+</div>
+<div class="coming_soon_footer">
+ 	<div class="left">
+ 	© 2018 PARKINGHOOD. <img src="http://parkinghood.com/iconbcn.png" >  FET AMB &hearts; DESDE BARCELONA.
+ 	</div>
+ <div class="right">	
+	<div style="margin-right:25px;" class="fb-like" data-href="https://www.facebook.com/parkinghood" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=parkinghood&amp;lang=ca&amp;show_screen_name=false" style="width:155px; height:20px;"></iframe>		
+	<!-- Place this tag where you want the widget to render. -->
+	<div class="g-follow" data-annotation="bubble" data-height="20" data-href="https://plus.google.com/100355110640423935347" data-rel="publisher"></div>
+
+	<!-- Place this tag after the last widget tag. -->
+	<script type="text/javascript">
+	  window.___gcfg = {lang: 'ca'};
+
+	  (function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/platform.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	</div>
+</div>
+  <script type="text/javascript" src="http://parkinghood.com/jsapi.js"></script>
+  <script type="text/javascript" src="http://parkinghood.com/ext_002.js"></script>
+<script>
+DEBUG = false;
+</script>  
+<script type="text/javascript" src="http://parkinghood.com/common.js"></script>
+<script type="text/javascript" src="http://parkinghood.com/ext.js"></script>
+<script>
+
+$(function() {
+
+  $('.not_sure').click(function() {
+    $('#next_trip_form').submit();
+    return false;
+  })
+
+  // When the overlay box changes, scroll it into view.
+  $.on_change('#box', function() {
+    var desiredScrolltop = $('#box').offset().top - 60;
+    if ($(window).scrollTop() > desiredScrolltop) {
+      $('html, body').animate({
+        scrollTop: desiredScrolltop
+      });
+    }
+  });
+
+  // When the user clicks on a link in the top nav, scroll smoothly to the target location
+  // http://stackoverflow.com/questions/8579643/simple-jquery-scroll-to-anchor-up-or-down-the-page
+  // http://stackoverflow.com/questions/7826868/fixed-position-navbar-only-clickable-once-in-mobile-safari-on-ios5#answer-10030251
+  function animateScroll() {
+    $('#scrollfix').css('height', '1px');
+    href = $(this).attr('href');
+    aTag = $(href.substr(href.indexOf('#')));
+    $('html,body').animate(
+      {scrollTop: aTag.offset().top},
+      1000,
+      null,
+      function() {
+        $('#scrollfix').css('height', '0');
+      });
+    return false;
+  }
+  $('.animate-scroll').each(function() {
+    $(this).on({'click touchstart': animateScroll});
+  });
+
+  
+  secondsPerSlide = 8;
+  $('.slideshow').cycle({timeout: secondsPerSlide * 1000});
+  $('.mobile_slideshow').cycle({timeout: secondsPerSlide * 1000});
+
+  
+  window.setTimeout(function() {
+    $('.slideshow img, .mobile_slideshow img').each(function() {
+      if (!this.src) {
+        this.src = this.getAttribute('mysrc');
+      }
+    });
+  }, secondsPerSlide * 1000 / 2);
+
+});
+
+</script>
+ <script type="text/javascript">
+        var emailEntered;
+
+        $(document).ready(function() {
+            $("#SendButton").click(function() {
+                    $(".error").hide();
+                    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                    var emailaddressVal = $("#email").val();
+
+                    if(emailaddressVal == '') {
+                        $("#message").html("<span class='color:#ffffff;'>Indica el correu electrònic abans d'unir-te.</span>");
+                        return false; 
+                    }
+                    else if(!emailReg.test(emailaddressVal)) {
+                        $("#message").html("<a class='not_sure'>Oops! Sembla que hi ha un error... torna-ho a provar!</a>");
+                        return false; 
+                    } 
+                    else {
+                        emailEntered = escape($('#email').val());
+                    }
+
+            });
+            $('#signup').submit(function() {
+                $("#message").html("<span class='error'>Ja quasi ets un dels nostres...</span>");
+                $.ajax({
+                    url: 'store-address.php',
+                    data: 'ajax=true&email=' + emailEntered,
+                    success: function(msg) {
+                        $('#message').html(msg);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+<script src="http://parkinghood.com/js.js" type="text/javascript"></script>
+<script src="http://parkinghood.com/main.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43727785-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body></html>
